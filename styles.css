@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+@font-face {
+	font-family: 'Helvetica';
+	src: url('./fonts/Helvetica.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+*, *::before, *::after {
+	margin: none;
+	padding: none;
+}
+
+body {
+	float: center;
+	align-items: center;
+	justify-content: center;
+	background: black;
+	background-image: url('./assets/bronze_background.png');
+	background-size: cover;
+	transition: all 0.2 ease;
+}
+
+img {
+	width: 90%;
+	border-radius: 20px;
+	border-style: none;
+}
+
+button {
+	outline: none;
+	border: none;
+	border-style: none;
+	background-color: transparent;
+	transition: all 0.2s ease-in-out;
+}
+
+#squad {
+	width: 100%;
+	height: 60px;
+	text-align: center;
+	font-family: 'Helvetica', sans-serif;
+	font-weight: 400;
+	outline: none;
+	color: white;
+	border-radius: 4px;
+	background: rgba(50, 50, 50, 1);
+	font-size: 15px;
+	text-align: center;
+	border: none;
+	border-style: none;
+}
+
+#balance {
+	text-align: center;
+	font-size: 40px;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
+}
+
+#league {
+	color: white;
+	text-align: center;
+	font-family: 'Helvetica', sans-serif;
+	font-weight: 400;
+}
+
+#league::after, #squad::after {
+	content: " »";
+	font-size: 14px;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+#balanceRow {
+	display: flex;
+	width: 100%;
+	height: 40px;
+	align-items: center;
+	justify-content: center;
+}
+
+#balanceRow img {
+	width: 50px;
+}
+
+#plus {
+	transition: all 0.05s ease-in-out;
+	border-radius: 50%;
+}
+
+#energy {
+	padding: 3px;
+	border-radius: 3px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	color: white;
+	position: absolute;
+	font-size: 24px;
+}
+
+#energy::after {
+	content: '/1000';
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 16px;
+	position: relative;
+}
+
+#energy::before {
+	content: '  ⚡ ';
+}
+
+#energyMeter {
+	width: 95%;
+	height: 25px;
+	position: absolute;
+	bottom: 3px;
+}
+
+#energyMeter::-webkit-meter-optimum-value {
+	background: #ddaa00;
+}
+
+#meter {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#boostTable {
+	list-style: none;
+	display: flex;
+	gap: 15px;
+	position: absolute;
+	right: 10px;
+	background: rgba(255, 255, 255, 0.5);
+	align-items: center;
+	justify-content: center;
+	margin: none;
+	padding: 10px;
+	border-radius: 4px;
+}
+
+.li {
+	font-family: 'Helvetica', sans-serif;
+	font-weight: 400;
+}

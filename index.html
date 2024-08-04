@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Notcoin</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<button id="squad">Join squad</button>
+	<br><br><br>
+	<div id="balanceRow">
+		<img src="./assets/mini_coin.png">
+		<h1 id="balance"></h1>
+	</div>
+	<p id="league">🏆 Bronze</p>
+	<br><br><br><br>
+	<button id="plus" onclick="plus()">
+		<img src="./assets/coin.png">
+	</button>
+	<p id="energy"></p>
+	<br>
+	<ul id="boostTable">
+		<li><button id="frens" class="li">🧸<br>Frens</button></li>
+		<li><button id="earn" class="li">🪙<br>Earn</button></li>
+		<li><button id="boost" class="li">🚀<br>Boost</button></li>
+	</ul>
+	<div id="meter">
+		<meter value="1000" min="0" max="1000" low="0" high="1000" id="energyMeter"></meter>
+	</div>
+	<script src="index.js"></script>
+</body>
+</html>
